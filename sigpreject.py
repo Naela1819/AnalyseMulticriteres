@@ -295,10 +295,6 @@ class newproject:
 
         return c1_vm,c2_vm,c3_vm
 
-
-
-
-
     def getPeriode2(self):
         fi_eco,fi_envi,fi_soc = self.getMatrice()
         p1_eco2 = float(self.dlg.p1_eco2.text())
@@ -429,6 +425,7 @@ class newproject:
         self.decisfinalp1 = []
         self.decisfinalp2 = []
         self.decisfinalp3 = []
+        self.decisfinal = []
         
 
         if (a<(seuil_eco*4)):
@@ -480,16 +477,16 @@ class newproject:
             self.decisp1.append("durable")
         if (f<(seuil_soc*4)):
             self.dlg.rst_c2_19.setText("Non durable")
-            self.decisp2.append("durable")
+            self.decisp2.append("Non durable")
         else :
             self.dlg.rst_c2_19.setText("durable")
-            self.decisp2.append("Non durable")
+            self.decisp2.append("durable")
         if (k<(seuil_soc*4)):
             self.dlg.rst_c2_21.setText("Non durable")
             self.decisp3.append("Non durable")
         else :
             self.dlg.rst_c2_21.setText("durable")
-            self.decisp3.append("Non durable")
+            self.decisp3.append("durable")
 
 
         if ((self.dlg.rst_c22.toPlainText() == "Non durable" and self.dlg.rst_c2_10.toPlainText() == "Non durable") or
@@ -499,9 +496,11 @@ class newproject:
          self.dlg.rst_c22.toPlainText() == "Non durable")
          ) :
             self.decisfinalp1.append("Non durable")
+            self.decisfinal.append(0)
 
         else :
             self.decisfinalp1.append("Durable")
+            self.decisfinal.append(1)
 
         if ((self.dlg.rst_c2_5.toPlainText() == "Non durable" and self.dlg.rst_c2_18.toPlainText() == "Non durable") or
          (self.dlg.rst_c2_5.toPlainText() == "Non durable" and self.dlg.rst_c2_19.toPlainText() == "Non durable") or
@@ -510,9 +509,11 @@ class newproject:
          and self.dlg.rst_c2_5.toPlainText() == "Non durable")
          ) :
             self.decisfinalp2.append("Non durable")
+            self.decisfinal.append(0)
 
         else :
             self.decisfinalp2.append("Durable")
+            self.decisfinal.append(1)
 
         if ((self.dlg.rst_c2_6.toPlainText() == "Non durable" and self.dlg.rst_c2_20.toPlainText() == "Non durable") or
          (self.dlg.rst_c2_6.toPlainText() == "Non durable" and self.dlg.rst_c2_21.toPlainText() == "Non durable") or
@@ -522,9 +523,11 @@ class newproject:
          self.dlg.rst_c2_6.toPlainText() == "Non durable")
          ) :
             self.decisfinalp3.append("Non durable")
+            self.decisfinal.append(0)
 
         else :
             self.decisfinalp3.append("Durable")
+            self.decisfinal.append(1)
 
     def creationlayr(self, layer, liste, nom):
         feats = [feat for feat in layer.getFeatures()]
@@ -552,13 +555,14 @@ class newproject:
         elif nom == "periode 2":
             for decis in self.decisp2:
                 li.append(decis)
-            for decis in self.decisfinalp1:
+            for decis in self.decisfinalp2:
                 li.append(decis)
         else:
             for decis in self.decisp3:
                 li.append(decis)
-            for decis in self.decisfinalp1:
+            for decis in self.decisfinalp3:
                 li.append(decis)
+        
         
 
 
@@ -579,6 +583,24 @@ class newproject:
             self.creationlayr(self.vlayer.clone(),resultList,"periode 1")
             self.creationlayr(self.vlayer.clone(),resultList,"periode 2")
             self.creationlayr(self.vlayer.clone(),resultList,"periode 3")
+            #Creating layer for final decision
+            newLayer = QgsVectorLayer("Polygon", "Zone Decision", "memory")
+            pr = newLayer.dataProvider()
+            pr.addAttributes([QgsField("Decision", QVariant.String)])
+            f = QgsFeature()
+            #Determining the decision
+
+            self.sumDes = self.decisfinal[0]+self.decisfinal[1]+self.decisfinal[2]
+            if(self.sumDes == 0 or self.sumDes == 1):
+                f.setAttributes(["Non Durable"])
+                newLayer.updateFields()
+                pr.addFeature(f)
+            else:
+                f.setAttributes(["Durable"])
+                newLayer.updateFields()
+                pr.addFeature(f)
+            QgsProject.instance().addMapLayer(newLayer)
+                
 
         else:
             self.dlg.stackedWidget.setCurrentWidget(self.dlg.page)

@@ -19,17 +19,17 @@
   <widget class="QStackedWidget" name="stackedWidget">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>-10</x>
      <y>0</y>
-     <width>891</width>
-     <height>691</height>
+     <width>901</width>
+     <height>681</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(222, 210, 200)</string>
    </property>
    <property name="currentIndex">
-    <number>1</number>
+    <number>0</number>
    </property>
    <widget class="QWidget" name="page">
     <widget class="QLabel" name="label_6">
@@ -55,7 +55,7 @@
     <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
-       <x>330</x>
+       <x>290</x>
        <y>140</y>
        <width>311</width>
        <height>121</height>
@@ -72,6 +72,9 @@
      </property>
      <property name="text">
       <string>MINI-PROJET </string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="label_2">
@@ -101,7 +104,7 @@
     <widget class="QLabel" name="label_4">
      <property name="geometry">
       <rect>
-       <x>630</x>
+       <x>620</x>
        <y>430</y>
        <width>181</width>
        <height>41</height>
@@ -125,7 +128,7 @@
     <widget class="QPushButton" name="menu_bt">
      <property name="geometry">
       <rect>
-       <x>410</x>
+       <x>370</x>
        <y>447</y>
        <width>151</width>
        <height>41</height>
@@ -156,8 +159,8 @@ background-color: rgb(214, 180, 106);
     <widget class="QLabel" name="label_5">
      <property name="geometry">
       <rect>
-       <x>630</x>
-       <y>490</y>
+       <x>620</x>
+       <y>480</y>
        <width>231</width>
        <height>31</height>
       </rect>
@@ -194,7 +197,7 @@ background-color: rgb(214, 180, 106);
     <widget class="QPushButton" name="quit_bt">
      <property name="geometry">
       <rect>
-       <x>410</x>
+       <x>370</x>
        <y>510</y>
        <width>151</width>
        <height>41</height>
@@ -236,7 +239,7 @@ background-color: rgb(214, 180, 106);
      <property name="geometry">
       <rect>
        <x>130</x>
-       <y>520</y>
+       <y>510</y>
        <width>161</width>
        <height>31</height>
       </rect>
@@ -254,7 +257,7 @@ background-color: rgb(214, 180, 106);
     <widget class="QLabel" name="label_10">
      <property name="geometry">
       <rect>
-       <x>190</x>
+       <x>130</x>
        <y>230</y>
        <width>631</width>
        <height>121</height>
@@ -272,11 +275,14 @@ background-color: rgb(214, 180, 106);
      <property name="text">
       <string>ANALYSE MULTICRITERES</string>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLabel" name="label_20">
      <property name="geometry">
       <rect>
-       <x>290</x>
+       <x>250</x>
        <y>40</y>
        <width>391</width>
        <height>61</height>
@@ -290,9 +296,12 @@ background-color: rgb(214, 180, 106);
       </font>
      </property>
      <property name="text">
-      <string>            UNIVERSITE ABDELMALEK ESSAÂDI
-        FACULTE DES SCIENCES ET TECHNIQUES
+      <string>UNIVERSITE ABDELMALEK ESSAÂDI
+FACULTE DES SCIENCES ET TECHNIQUES
 3EME ANNEE CYCLE INGENIEUR GEOINFORMATION</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
    </widget>
@@ -651,7 +660,7 @@ border: 2px solid rgb(234, 209, 161);
     <widget class="QLabel" name="label_18">
      <property name="geometry">
       <rect>
-       <x>290</x>
+       <x>260</x>
        <y>40</y>
        <width>391</width>
        <height>61</height>
@@ -665,9 +674,12 @@ border: 2px solid rgb(234, 209, 161);
       </font>
      </property>
      <property name="text">
-      <string>            UNIVERSITE ABDELMALEK ESSAÂDI
-        FACULTE DES SCIENCES ET TECHNIQUES
+      <string>UNIVERSITE ABDELMALEK ESSAÂDI
+FACULTE DES SCIENCES ET TECHNIQUES
 3EME ANNEE CYCLE INGENIEUR GEOINFORMATION</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="label_name">
@@ -1142,7 +1154,7 @@ border: 2px solid rgb(234, 209, 161);
     <widget class="QLabel" name="label_7">
      <property name="geometry">
       <rect>
-       <x>310</x>
+       <x>320</x>
        <y>180</y>
        <width>291</width>
        <height>41</height>
@@ -1155,7 +1167,10 @@ border: 2px solid rgb(234, 209, 161);
       </font>
      </property>
      <property name="text">
-      <string>Les paramètres economiques</string>
+      <string>Paramètres économiques</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QPushButton" name="next_3">
@@ -1195,7 +1210,7 @@ background-color: rgb(214, 180, 106);
     <widget class="QLabel" name="label_17">
      <property name="geometry">
       <rect>
-       <x>290</x>
+       <x>270</x>
        <y>40</y>
        <width>391</width>
        <height>61</height>
@@ -1209,15 +1224,18 @@ background-color: rgb(214, 180, 106);
       </font>
      </property>
      <property name="text">
-      <string>            UNIVERSITE ABDELMALEK ESSAÂDI
-        FACULTE DES SCIENCES ET TECHNIQUES
+      <string>UNIVERSITE ABDELMALEK ESSAÂDI
+FACULTE DES SCIENCES ET TECHNIQUES
 3EME ANNEE CYCLE INGENIEUR GEOINFORMATION</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="label_45">
      <property name="geometry">
       <rect>
-       <x>150</x>
+       <x>160</x>
        <y>240</y>
        <width>101</width>
        <height>16</height>
@@ -1236,7 +1254,7 @@ background-color: rgb(214, 180, 106);
     <widget class="QLabel" name="label_47">
      <property name="geometry">
       <rect>
-       <x>320</x>
+       <x>330</x>
        <y>240</y>
        <width>111</width>
        <height>16</height>
@@ -1255,7 +1273,7 @@ background-color: rgb(214, 180, 106);
     <widget class="QLabel" name="label_72">
      <property name="geometry">
       <rect>
-       <x>650</x>
+       <x>660</x>
        <y>390</y>
        <width>71</width>
        <height>16</height>
@@ -1274,7 +1292,7 @@ background-color: rgb(214, 180, 106);
     <widget class="QLabel" name="label_9">
      <property name="geometry">
       <rect>
-       <x>290</x>
+       <x>300</x>
        <y>330</y>
        <width>341</width>
        <height>41</height>
@@ -1287,13 +1305,16 @@ background-color: rgb(214, 180, 106);
       </font>
      </property>
      <property name="text">
-      <string>Les paramètres environnementals</string>
+      <string>Paramètres environnementals</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="label_81">
      <property name="geometry">
       <rect>
-       <x>500</x>
+       <x>510</x>
        <y>390</y>
        <width>71</width>
        <height>16</height>
@@ -1312,7 +1333,7 @@ background-color: rgb(214, 180, 106);
     <widget class="QLabel" name="label_82">
      <property name="geometry">
       <rect>
-       <x>150</x>
+       <x>160</x>
        <y>390</y>
        <width>101</width>
        <height>16</height>
@@ -1331,7 +1352,7 @@ background-color: rgb(214, 180, 106);
     <widget class="QLabel" name="label_87">
      <property name="geometry">
       <rect>
-       <x>300</x>
+       <x>310</x>
        <y>390</y>
        <width>151</width>
        <height>16</height>
@@ -1350,7 +1371,7 @@ background-color: rgb(214, 180, 106);
     <widget class="QLabel" name="label_11">
      <property name="geometry">
       <rect>
-       <x>400</x>
+       <x>405</x>
        <y>130</y>
        <width>101</width>
        <height>41</height>
@@ -1368,11 +1389,14 @@ background-color: rgb(214, 180, 106);
      <property name="text">
       <string>Période 1 </string>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLabel" name="label_64">
      <property name="geometry">
       <rect>
-       <x>490</x>
+       <x>500</x>
        <y>520</y>
        <width>101</width>
        <height>16</height>
@@ -1391,7 +1415,7 @@ background-color: rgb(214, 180, 106);
     <widget class="QLabel" name="label_71">
      <property name="geometry">
       <rect>
-       <x>330</x>
+       <x>340</x>
        <y>520</y>
        <width>81</width>
        <height>16</height>
@@ -1410,7 +1434,7 @@ background-color: rgb(214, 180, 106);
     <widget class="QLabel" name="label_69">
      <property name="geometry">
       <rect>
-       <x>160</x>
+       <x>170</x>
        <y>520</y>
        <width>101</width>
        <height>16</height>
@@ -1429,7 +1453,7 @@ background-color: rgb(214, 180, 106);
     <widget class="QLabel" name="label_8">
      <property name="geometry">
       <rect>
-       <x>330</x>
+       <x>340</x>
        <y>470</y>
        <width>271</width>
        <height>41</height>
@@ -1442,13 +1466,16 @@ background-color: rgb(214, 180, 106);
       </font>
      </property>
      <property name="text">
-      <string>Les paramètres de société</string>
+      <string>Paramètres de société</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="label_61">
      <property name="geometry">
       <rect>
-       <x>620</x>
+       <x>630</x>
        <y>520</y>
        <width>141</width>
        <height>16</height>
@@ -1467,7 +1494,7 @@ background-color: rgb(214, 180, 106);
     <widget class="QLabel" name="label_59">
      <property name="geometry">
       <rect>
-       <x>630</x>
+       <x>640</x>
        <y>240</y>
        <width>141</width>
        <height>16</height>
@@ -1486,7 +1513,7 @@ background-color: rgb(214, 180, 106);
     <widget class="QLabel" name="label_46">
      <property name="geometry">
       <rect>
-       <x>460</x>
+       <x>470</x>
        <y>240</y>
        <width>131</width>
        <height>16</height>
@@ -1539,7 +1566,7 @@ background-color: rgb(214, 180, 106);
     <widget class="Line" name="line_4">
      <property name="geometry">
       <rect>
-       <x>117</x>
+       <x>127</x>
        <y>150</y>
        <width>251</width>
        <height>20</height>
@@ -1552,7 +1579,7 @@ background-color: rgb(214, 180, 106);
     <widget class="Line" name="line_5">
      <property name="geometry">
       <rect>
-       <x>530</x>
+       <x>540</x>
        <y>150</y>
        <width>251</width>
        <height>20</height>
@@ -1565,7 +1592,7 @@ background-color: rgb(214, 180, 106);
     <widget class="Line" name="line_6">
      <property name="geometry">
       <rect>
-       <x>103</x>
+       <x>113</x>
        <y>170</y>
        <width>20</width>
        <height>451</height>
@@ -1578,7 +1605,7 @@ background-color: rgb(214, 180, 106);
     <widget class="Line" name="line_7">
      <property name="geometry">
       <rect>
-       <x>770</x>
+       <x>780</x>
        <y>170</y>
        <width>20</width>
        <height>451</height>
@@ -1591,7 +1618,7 @@ background-color: rgb(214, 180, 106);
     <widget class="Line" name="line_8">
      <property name="geometry">
       <rect>
-       <x>110</x>
+       <x>120</x>
        <y>610</y>
        <width>671</width>
        <height>20</height>
@@ -1604,7 +1631,7 @@ background-color: rgb(214, 180, 106);
     <widget class="QLineEdit" name="p4_eco1">
      <property name="geometry">
       <rect>
-       <x>620</x>
+       <x>630</x>
        <y>270</y>
        <width>131</width>
        <height>41</height>
@@ -1636,7 +1663,7 @@ border: 2px solid rgb(234, 209, 161);
     <widget class="QLineEdit" name="p3_eco1">
      <property name="geometry">
       <rect>
-       <x>460</x>
+       <x>470</x>
        <y>270</y>
        <width>131</width>
        <height>41</height>
@@ -1668,7 +1695,7 @@ border: 2px solid rgb(234, 209, 161);
     <widget class="QLineEdit" name="p2_eco1">
      <property name="geometry">
       <rect>
-       <x>310</x>
+       <x>320</x>
        <y>270</y>
        <width>121</width>
        <height>41</height>
@@ -1700,7 +1727,7 @@ border: 2px solid rgb(234, 209, 161);
     <widget class="QLineEdit" name="p1_eco1">
      <property name="geometry">
       <rect>
-       <x>140</x>
+       <x>150</x>
        <y>270</y>
        <width>121</width>
        <height>41</height>
@@ -1732,7 +1759,7 @@ border: 2px solid rgb(234, 209, 161);
     <widget class="QLineEdit" name="p1_envi1">
      <property name="geometry">
       <rect>
-       <x>140</x>
+       <x>150</x>
        <y>420</y>
        <width>121</width>
        <height>41</height>
@@ -1764,7 +1791,7 @@ border: 2px solid rgb(234, 209, 161);
     <widget class="QLineEdit" name="p3_envi1">
      <property name="geometry">
       <rect>
-       <x>460</x>
+       <x>470</x>
        <y>420</y>
        <width>131</width>
        <height>41</height>
@@ -1796,7 +1823,7 @@ border: 2px solid rgb(234, 209, 161);
     <widget class="QLineEdit" name="p2_envi1">
      <property name="geometry">
       <rect>
-       <x>310</x>
+       <x>320</x>
        <y>420</y>
        <width>121</width>
        <height>41</height>
@@ -1828,7 +1855,7 @@ border: 2px solid rgb(234, 209, 161);
     <widget class="QLineEdit" name="p4_envi1">
      <property name="geometry">
       <rect>
-       <x>620</x>
+       <x>630</x>
        <y>420</y>
        <width>131</width>
        <height>41</height>
@@ -1860,7 +1887,7 @@ border: 2px solid rgb(234, 209, 161);
     <widget class="QLineEdit" name="p1_soc1">
      <property name="geometry">
       <rect>
-       <x>140</x>
+       <x>150</x>
        <y>550</y>
        <width>121</width>
        <height>41</height>
@@ -1892,7 +1919,7 @@ border: 2px solid rgb(234, 209, 161);
     <widget class="QLineEdit" name="p3_soc1">
      <property name="geometry">
       <rect>
-       <x>460</x>
+       <x>470</x>
        <y>550</y>
        <width>131</width>
        <height>41</height>
@@ -1924,7 +1951,7 @@ border: 2px solid rgb(234, 209, 161);
     <widget class="QLineEdit" name="p2_soc1">
      <property name="geometry">
       <rect>
-       <x>310</x>
+       <x>320</x>
        <y>550</y>
        <width>121</width>
        <height>41</height>
@@ -1956,7 +1983,7 @@ border: 2px solid rgb(234, 209, 161);
     <widget class="QLineEdit" name="p4_soc1">
      <property name="geometry">
       <rect>
-       <x>620</x>
+       <x>630</x>
        <y>550</y>
        <width>131</width>
        <height>41</height>
@@ -3683,6 +3710,12 @@ border: 2px solid rgb(234, 209, 161);
     </widget>
    </widget>
    <widget class="QWidget" name="page_6">
+    <property name="maximumSize">
+     <size>
+      <width>900</width>
+      <height>700</height>
+     </size>
+    </property>
     <widget class="QPushButton" name="quitbt4">
      <property name="geometry">
       <rect>
@@ -3740,7 +3773,7 @@ background-color: rgb(214, 180, 106);
     <widget class="QLabel" name="label_39">
      <property name="geometry">
       <rect>
-       <x>310</x>
+       <x>230</x>
        <y>660</y>
        <width>331</width>
        <height>16</height>
@@ -3756,19 +3789,37 @@ background-color: rgb(214, 180, 106);
      <property name="text">
       <string>Realisé  par : EL Imrani Nouhaila &amp; IRJA Malak</string>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
-       <x>30</x>
-       <y>280</y>
-       <width>831</width>
-       <height>151</height>
+       <x>60</x>
+       <y>290</y>
+       <width>774</width>
+       <height>130</height>
       </rect>
      </property>
      <layout class="QGridLayout" name="gridLayout_5">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetFixedSize</enum>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="spacing">
+       <number>2</number>
+      </property>
       <item row="2" column="1">
        <widget class="QTextBrowser" name="rst2_c2">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>40</height>
+         </size>
+        </property>
         <property name="styleSheet">
          <string notr="true">QTextBrowser{
 border: 2px solid rgb(190, 160, 94);
@@ -3783,6 +3834,12 @@ padding-right:20px;
       </item>
       <item row="2" column="2">
        <widget class="QTextBrowser" name="rst2_c3">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>40</height>
+         </size>
+        </property>
         <property name="styleSheet">
          <string notr="true">QTextBrowser{
 border: 2px solid rgb(190, 160, 94);
@@ -3797,6 +3854,12 @@ padding-right:20px;
       </item>
       <item row="3" column="0">
        <widget class="QTextBrowser" name="rst_c2_5">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>40</height>
+         </size>
+        </property>
         <property name="styleSheet">
          <string notr="true">QTextBrowser{
 border: 2px solid rgb(190, 160, 94);
@@ -3811,6 +3874,12 @@ padding-right:20px;
       </item>
       <item row="3" column="1">
        <widget class="QTextBrowser" name="rst_c2_18">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>40</height>
+         </size>
+        </property>
         <property name="styleSheet">
          <string notr="true">QTextBrowser{
 border: 2px solid rgb(190, 160, 94);
@@ -3825,6 +3894,12 @@ padding-right:20px;
       </item>
       <item row="3" column="2">
        <widget class="QTextBrowser" name="rst_c2_19">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>40</height>
+         </size>
+        </property>
         <property name="styleSheet">
          <string notr="true">QTextBrowser{
 border: 2px solid rgb(190, 160, 94);
@@ -3839,6 +3914,12 @@ padding-right:20px;
       </item>
       <item row="0" column="0">
        <widget class="QLabel" name="label_41">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>30</height>
+         </size>
+        </property>
         <property name="font">
          <font>
           <family>Franklin Gothic Medium</family>
@@ -3852,6 +3933,12 @@ padding-right:20px;
       </item>
       <item row="2" column="0">
        <widget class="QTextBrowser" name="rst2_c1">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>40</height>
+         </size>
+        </property>
         <property name="styleSheet">
          <string notr="true">QTextBrowser{
 border: 2px solid rgb(190, 160, 94);
@@ -3866,6 +3953,12 @@ padding-right:20px;
       </item>
       <item row="1" column="0">
        <widget class="QLabel" name="label_132">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>20</height>
+         </size>
+        </property>
         <property name="font">
          <font>
           <family>Franklin Gothic Medium</family>
@@ -3879,6 +3972,12 @@ padding-right:20px;
       </item>
       <item row="1" column="1">
        <widget class="QLabel" name="label_133">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>20</height>
+         </size>
+        </property>
         <property name="font">
          <font>
           <family>Franklin Gothic Medium</family>
@@ -3892,6 +3991,12 @@ padding-right:20px;
       </item>
       <item row="1" column="2">
        <widget class="QLabel" name="label_131">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>20</height>
+         </size>
+        </property>
         <property name="font">
          <font>
           <family>Franklin Gothic Medium</family>
@@ -3908,15 +4013,27 @@ padding-right:20px;
     <widget class="QWidget" name="layoutWidget_2">
      <property name="geometry">
       <rect>
-       <x>30</x>
+       <x>60</x>
        <y>440</y>
-       <width>831</width>
-       <height>151</height>
+       <width>772</width>
+       <height>127</height>
       </rect>
      </property>
-     <layout class="QGridLayout" name="gridLayout_6">
+     <layout class="QGridLayout" name="gridLayout_6" columnstretch="0,0,0">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetFixedSize</enum>
+      </property>
+      <property name="spacing">
+       <number>1</number>
+      </property>
       <item row="0" column="0">
        <widget class="QLabel" name="label_44">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>30</height>
+         </size>
+        </property>
         <property name="font">
          <font>
           <family>Franklin Gothic Medium</family>
@@ -3930,6 +4047,12 @@ padding-right:20px;
       </item>
       <item row="1" column="2">
        <widget class="QLabel" name="label_134">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>20</height>
+         </size>
+        </property>
         <property name="font">
          <font>
           <family>Franklin Gothic Medium</family>
@@ -3943,6 +4066,12 @@ padding-right:20px;
       </item>
       <item row="2" column="0">
        <widget class="QTextBrowser" name="rst3_c1">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>40</height>
+         </size>
+        </property>
         <property name="styleSheet">
          <string notr="true">QTextBrowser{
 border: 2px solid rgb(190, 160, 94);
@@ -3957,6 +4086,12 @@ padding-right:20px;
       </item>
       <item row="1" column="0">
        <widget class="QLabel" name="label_135">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>20</height>
+         </size>
+        </property>
         <property name="font">
          <font>
           <family>Franklin Gothic Medium</family>
@@ -3970,6 +4105,12 @@ padding-right:20px;
       </item>
       <item row="1" column="1">
        <widget class="QLabel" name="label_136">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>20</height>
+         </size>
+        </property>
         <property name="font">
          <font>
           <family>Franklin Gothic Medium</family>
@@ -3983,6 +4124,12 @@ padding-right:20px;
       </item>
       <item row="2" column="1">
        <widget class="QTextBrowser" name="rst3_c2">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>40</height>
+         </size>
+        </property>
         <property name="styleSheet">
          <string notr="true">QTextBrowser{
 border: 2px solid rgb(190, 160, 94);
@@ -3997,6 +4144,12 @@ padding-right:20px;
       </item>
       <item row="2" column="2">
        <widget class="QTextBrowser" name="rst3_c3">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>40</height>
+         </size>
+        </property>
         <property name="styleSheet">
          <string notr="true">QTextBrowser{
 border: 2px solid rgb(190, 160, 94);
@@ -4011,6 +4164,12 @@ padding-right:20px;
       </item>
       <item row="3" column="0">
        <widget class="QTextBrowser" name="rst_c2_6">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>40</height>
+         </size>
+        </property>
         <property name="styleSheet">
          <string notr="true">QTextBrowser{
 border: 2px solid rgb(190, 160, 94);
@@ -4025,6 +4184,12 @@ padding-right:20px;
       </item>
       <item row="3" column="1">
        <widget class="QTextBrowser" name="rst_c2_20">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>40</height>
+         </size>
+        </property>
         <property name="styleSheet">
          <string notr="true">QTextBrowser{
 border: 2px solid rgb(190, 160, 94);
@@ -4039,6 +4204,12 @@ padding-right:20px;
       </item>
       <item row="3" column="2">
        <widget class="QTextBrowser" name="rst_c2_21">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>40</height>
+         </size>
+        </property>
         <property name="styleSheet">
          <string notr="true">QTextBrowser{
 border: 2px solid rgb(190, 160, 94);
@@ -4056,28 +4227,27 @@ padding-right:20px;
     <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
-       <x>30</x>
+       <x>60</x>
        <y>130</y>
-       <width>831</width>
-       <height>151</height>
+       <width>774</width>
+       <height>130</height>
       </rect>
      </property>
-     <layout class="QGridLayout" name="gridLayout">
-      <item row="0" column="0">
-       <widget class="QLabel" name="label_33">
-        <property name="font">
-         <font>
-          <family>Franklin Gothic Medium</family>
-          <pointsize>16</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>Résultat valeur moyen T1</string>
-        </property>
-       </widget>
-      </item>
+     <layout class="QGridLayout" name="gridLayout" rowstretch="0,0,0,0" columnstretch="0,0,0">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetMinAndMaxSize</enum>
+      </property>
+      <property name="spacing">
+       <number>2</number>
+      </property>
       <item row="1" column="2">
        <widget class="QLabel" name="label_57">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>20</height>
+         </size>
+        </property>
         <property name="font">
          <font>
           <family>Franklin Gothic Medium</family>
@@ -4089,8 +4259,33 @@ padding-right:20px;
         </property>
        </widget>
       </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_33">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Franklin Gothic Medium</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Résultat valeur moyen T1</string>
+        </property>
+       </widget>
+      </item>
       <item row="2" column="0">
        <widget class="QTextBrowser" name="rst_c1">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>40</height>
+         </size>
+        </property>
         <property name="styleSheet">
          <string notr="true">QTextBrowser{
 border: 2px solid rgb(190, 160, 94);
@@ -4105,6 +4300,12 @@ padding-right:20px;
       </item>
       <item row="1" column="0">
        <widget class="QLabel" name="label_55">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>20</height>
+         </size>
+        </property>
         <property name="font">
          <font>
           <family>Franklin Gothic Medium</family>
@@ -4118,6 +4319,12 @@ padding-right:20px;
       </item>
       <item row="1" column="1">
        <widget class="QLabel" name="label_56">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>20</height>
+         </size>
+        </property>
         <property name="font">
          <font>
           <family>Franklin Gothic Medium</family>
@@ -4131,6 +4338,18 @@ padding-right:20px;
       </item>
       <item row="2" column="1">
        <widget class="QTextBrowser" name="rst_c2">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>40</height>
+         </size>
+        </property>
         <property name="styleSheet">
          <string notr="true">QTextBrowser{
 border: 2px solid rgb(190, 160, 94);
@@ -4145,6 +4364,12 @@ padding-right:20px;
       </item>
       <item row="2" column="2">
        <widget class="QTextBrowser" name="rst_c3">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>40</height>
+         </size>
+        </property>
         <property name="styleSheet">
          <string notr="true">QTextBrowser{
 border: 2px solid rgb(190, 160, 94);
@@ -4159,6 +4384,18 @@ padding-right:20px;
       </item>
       <item row="3" column="0">
        <widget class="QTextBrowser" name="rst_c22">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>40</height>
+         </size>
+        </property>
         <property name="styleSheet">
          <string notr="true">QTextBrowser{
 border: 2px solid rgb(190, 160, 94);
@@ -4173,6 +4410,12 @@ padding-right:20px;
       </item>
       <item row="3" column="1">
        <widget class="QTextBrowser" name="rst_c2_10">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>40</height>
+         </size>
+        </property>
         <property name="styleSheet">
          <string notr="true">QTextBrowser{
 border: 2px solid rgb(190, 160, 94);
@@ -4187,6 +4430,18 @@ padding-right:20px;
       </item>
       <item row="3" column="2">
        <widget class="QTextBrowser" name="rst_c2_11">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>40</height>
+         </size>
+        </property>
         <property name="styleSheet">
          <string notr="true">QTextBrowser{
 border: 2px solid rgb(190, 160, 94);
